@@ -1,0 +1,148 @@
+/* CSS untuk mengatur font, line-height, dan ukuran font untuk semua elemen */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+/* CSS untuk mengatur margin, padding, dan perilaku scroll untuk elemen html */
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* CSS untuk mengatur margin dan padding untuk elemen body */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* CSS untuk mengatur lebar dan margin untuk elemen dengan kelas "layar-dalam" */
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+
+/* CSS untuk mengatur lebar elemen dengan kelas "layar-penuh" */
+.layar-penuh {
+  width: 100%;
+}
+
+/* CSS untuk mengatur tampilan dan posisi elemen navigasi (nav) */
+nav {
+  z-index: 100;
+  color: #fefefe;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease; /* Efek transisi untuk perubahan warna latar belakang */
+}
+
+/* CSS untuk mengatur tampilan dan posisi logo dalam elemen navigasi (nav) */
+nav .logo img {
+  vertical-align: middle;
+  width: 90px;
+  border-radius: 45px; /* Setengah dari lebar gambar, memberikan efek sudut melengkung pada gambar */
+}
+
+/* CSS untuk mengatur tampilan dan posisi logo dalam elemen navigasi (nav) */
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 10px;
+  text-align: center;
+}
+
+/* CSS untuk mengatur tampilan dan posisi menu dalam elemen navigasi (nav) */
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+/* CSS untuk mengatur tampilan dan posisi daftar menu dalam elemen navigasi (nav) */
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Membuat daftar menu tampil dalam satu baris */
+}
+
+/* CSS untuk mengatur tampilan dan posisi setiap item daftar menu dalam elemen navigasi (nav) */
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+/* CSS untuk mengatur tampilan tautan dalam daftar menu pada elemen navigasi (nav) */
+nav ul li a {
+  color: #fff; /* Mengatur warna teks menjadi putih */
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none; /* Menghapus dekorasi tautan */
+}
+
+/* CSS untuk mengatur tampilan elemen header */
+header {
+  position: relative;
+  height: 100vh; /* Tinggi elemen header sama dengan tinggi viewport */
+  width: 100%;
+  overflow: hidden;
+  z-index: 2; /* Z-index digunakan untuk menentukan tumpukan elemen */
+}
+
+/* CSS untuk mengatur tampilan video latar belakang pada elemen header */
+header video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Menyesuaikan ukuran video agar mencakup seluruh area header */
+  z-index: -2; /* Z-index negatif membuat video berada di belakang elemen lainnya */
+}
+
+/* CSS untuk mengatur tampilan dan posisi elemen intro pada elemen header */
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%; /* Posisi vertikal elemen intro berada di tengah header */
+}
+
+/* CSS untuk mengatur tampilan judul level 3 (h3) pada elemen intro */
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS untuk mengatur tampilan tombol pada elemen intro */
+.tombol {
+  background-color: #c86b85; /* Warna latar belakang tombol */
+  height: 40px; /* Tinggi tombol */
+  line-height: 42px; /* Jarak antara teks dengan border atas dan bawah tombol */
+  color: #fff; /* Warna teks tombol */
+  text-decoration: none; /* Menghapus dekorasi tautan */
+  display: inline-block; /* Membuat tombol tampil dalam satu baris */
+  padding: 0px 20px 0px 20px; /* Padding tombol */
+  font-size: 15px; /* Ukuran font pada tombol */
+  border-radius: 4px; /* Mengatur sudut melengkung pada tombol */
+}
+
+/* CSS untuk mengatur tampilan lapisan transparan pada elemen header */
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000; /* Warna latar belakang lapisan transparan */
+  opacity: 50%; /* Tingkat keburaman (transparansi) lapisan transparan */
+  z-index: -1; /* Z-index negatif membuat lapisan berada di belakang elemen lainnya */
+}

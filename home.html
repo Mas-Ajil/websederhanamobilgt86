@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen sebagai HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa Inggris -->
+  <head> <!-- Bagian kepala dokumen -->
+    <meta charset="UTF-8" /> <!-- Pengaturan karakter encoding dokumen ke UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Pengaturan kompatibilitas untuk Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Pengaturan tampilan halaman sesuai perangkat -->
+    <title>Home</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="stylehome.css" /> <!-- Penautan ke file CSS eksternal -->
+  </head>
+  <body> <!-- Tubuh dokumen -->
+    <nav> <!-- Navigasi situs -->
+      <div class="layar-dalam"> <!-- Kontainer dengan kelas "layar-dalam" -->
+        <div class="logo"> <!-- Kontainer dengan kelas "logo" -->
+          <a href=""><img src="asset/logo86.png" class="putih" /></a> <!-- Tautan gambar logo -->
+        </div>
+        <div class="menu"> <!-- Kontainer dengan kelas "menu" -->
+          <ul> <!-- Daftar tak terurut (unordered list) -->
+            <li><a href="home.html">Home</a></li> <!-- Item menu "Home" dengan tautan ke "home.html" -->
+            <li><a href="co/coba2.php">Checkout</a></li> <!-- Item menu "Checkout" dengan tautan ke "co/coba2.php" -->
+            <li><a href="batalkan/batalkan.php">pesanan</a></li> <!-- Item menu "Pesanan" dengan tautan ke "batalkan/batalkan.php" -->
+            <li><a href="updatepass.php">update password</a></li> <!-- Item menu "Update Password" dengan tautan ke "updatepass.php" -->
+            <li><a href="halamanAwal.html">Logout</a></li> <!-- Item menu "Logout" dengan tautan ke "halamanAwal.html" -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh"> <!-- Kontainer dengan kelas "layar-penuh" -->
+      <header id="home"> <!-- Bagian header dengan ID "home" -->
+        <div class="overlay"></div> <!-- Lapisan transparan untuk efek visual -->
+        <video autoplay muted loop> <!-- Elemen video yang otomatis dimulai (autoplay), tanpa suara (muted), berulang (loop) -->
+          <source src="asset/home.mp4" type="video/mp4" /> <!-- Sumber video dalam format MP4 -->
+        </video>
+        <div class="intro"> <!-- Kontainer dengan kelas "intro" -->
+          <h3>GT 86</h3> <!-- Judul level 3 "GT 86" -->
+          <p>
+            Anda punya uang anda punya toyota GT 86 
+          </p> <!-- Paragraf dengan teks informasi -->
+          <p>
+            <a href="co/coba2.php" class="tombol">Buy now</a> <!-- Tautan dengan kelas "tombol" yang belum memiliki tautan URL (href kosong) -->
+          </p>
+        </div>
+      </header>
+  </body>
+</html>
